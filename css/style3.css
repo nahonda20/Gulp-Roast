@@ -1,0 +1,208 @@
+*, *::before, *::after {
+  box-sizing: border-box;}
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-end;
+  }
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+article {
+  flex-basis: 73%;
+}
+
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+.light{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+.pour{
+  width:700px;  
+  height: auto;
+  margin-top: 100px;
+  border-radius:10%
+}
+.coffee{ 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  align-items: center; 
+  justify-items: center; 
+  gap: 10px;
+  margin-left: -650px;
+  margin-top:100px;
+  }
+.middle{
+border-radius: 5%;
+Margin-top:-190px;
+}
+.first{
+  border-radius:5%;  
+  margin-top: -100px; 
+  height:190px;http://127.0.0.1:3000/gulp-espresso%20copy.jpg
+}
+.beans{
+  border-radius:5%; 
+  margin-top: -100px; 
+}
+.top-middle{
+  margin-left:50px; 
+}
+.left{
+  margin-top:-60px;
+}
+.right{
+  margin-top:-150px;
+}
+
+
+@media (max-width: 767px) {
+  .main {
+      flex-direction: column;
+  }
+
+  .content, .sidebar {
+      width: 100%;
+      margin-bottom: 0;
+  }
+
+ 
+  .header, .footer {
+      font-size: 0.875rem;
+      padding: 0.75rem;
+  }
+
+  .content, .sidebar {
+      padding: 0.75rem;
+  }
+}
+
+/* Medium Viewport (Tablet) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+  }
+
+  body {
+      background-image: url('background-medium.jpg');
+  }
+}
+
+/* Large Viewport (Desktop) */
+@media (min-width: 1200px) {
+  .main {
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+  }
+
+  body {
+      background-image: url('background-large.jpg');
+  }
+}
